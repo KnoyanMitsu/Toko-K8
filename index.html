@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pawon</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
+</head>
+<body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
+
+<div id="page">
+	<div class="container">
+		<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="index.html" rel="home">Pawon</a></h1>
+		</div>
+		<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle">Menu</button>
+		<a class="skip-link screen-reader-text" href="#content">Lewatkan Ke Kontent</a>
+		<div class="menu-menu-1-container">
+			<ul id="menu-menu-1" class="menu">
+				<li><a href="index.html">Beranda</a></li>
+				<li><a href="produk.html">Produk</a></li>
+				<li><a href="Belanja.html">Keranjang Belanja</a></li>
+				<li><a href="cari.html">Pencarian Produk</a></li>
+				<li><a href="DM.html">DM</a></li>
+				<li><a href="login.html">Login</a></li>
+				</li>
+			</ul>
+		</div>
+		</nav>
+		</header>
+
+		<br>
+		<br>
+		<br>
+		<body>
+
+			<div class="slideshow-container">
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="img/photo_2021-10-05_16-24-53.jpg" style="width:50%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="img/WhatsApp Image 2021-10-05 at 9.00.48 AM.jpeg" style="width:50%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="img/photo_2021-10-05_16-24-53.jpg" style="width:50%">
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+			
+			</body>
+		<h1 style="text-align:center"></h1>
+		<br>
+		<h1><a href="KueMarble.html">Kue Marble</a></h1>
+		<article>Kue  Marmer    atau  biasa  disebuat  Marble  Cake  adalah  kue 
+			yang pada dasarnya berasal dari resep pound kue  yang kemudian di 
+			isi pada....
+			<a href="KueMarble.html">Read more</a></article>
+		<br>
+	</br>
+		<h1><a href="Brownies.html">Brownies</a></h1>
+		<article>Rasanya tak ada seorang pun yang tidak pernah makan jenis kue yang satu ini, Brownies! Apalagi jika kalian yang merupakan penyuka kue cokelat. Nah, bagi kalian penggemar Brownies, hari ini merupakan Brownies Day....<a href="Brownies.html">Read more</a></article>
+	</br>
+	</br>
+	<h1><a href="AbonGulung.html">Abon gulung</a></h1>
+	<article>Abon Gulung merupakan makanan ringan khas Manokwari yang kerap ditemui di setiap bandara yang ada di Papua maupun Papua Barat. Abon gulung sebena....<a href="AbonGulung.html">Read more</a></article>
+	</br>
+	<footer id="colophon" class="site-footer">
+	<div class="container">
+		<div class="site-info">
+			 <a target="blank" href=""> Pawon merdana </a>
+		</div>
+	</div>	
+	</footer>
+	<a href="#top" class="smoothup" title="Back to top"><span class="genericon genericon-collapse"></span></a>
+</div>
+<!-- #page -->
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+</body>
+</html>
